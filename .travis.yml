@@ -8,17 +8,3 @@ services:
 
 before_script:
   - psql -c 'create database development_csd;' -U postgres
-# deploy:
-#     - provider: elasticbeanstalk
-#       skip_cleanup: true
-#       app: wipro-taas # Elastic Beanstalk app name
-#       env: wiproTaas-env # Elastic Beanstalk env name
-#       bucket_name: elasticbeanstalk-us-east-1-019578299863 # S3 bucket used by Elastic Beanstalk
-#       region: us-east-1
-#       access_key_id:
-#         secure: "AKIAILKSDPMAUDUHCS6A"
-#       secret_access_key:
-#         secure: "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"
-#       on:
-#           repo: Preenos/wiprosecure
-#           branch: master
