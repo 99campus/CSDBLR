@@ -5,7 +5,7 @@ class Calculator < ActiveRecord::Base
     arr = []
     bin_oper = ['+','-','*','/']
     uni_oper = ['%']
-    exception_handling
+    exception_handling(arr)
     data.each_with_index do |data,index|
       if bin_oper.include?(data)
         binary_operation(arr,data)
@@ -32,7 +32,7 @@ class Calculator < ActiveRecord::Base
     arr.push(calc.to_s)
   end
 
-  def exception_handling
+  def exception_handling(arr)
   end
 
 
